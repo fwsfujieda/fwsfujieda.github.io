@@ -462,10 +462,10 @@ section#pickup ul li{
 }
 
 section#pickup ul li#pickupBox01{
-	background: url(../images/pick1.png) no-repeat center center;
+	background: url(../images/articlepic.png) no-repeat center center;
 }
 section#pickup ul li#pickupBox02{
-	background: url(../images/pick2.png) no-repeat center center;
+	background: url(../images/twittertop.png) no-repeat center center;
 }
 section#pickup ul li#pickupBox03{
 	background: url(../images/wordpic.jpg) no-repeat center center;
