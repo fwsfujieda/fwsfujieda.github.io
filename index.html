@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=640">
+<link rel="icon" href="./images/favicon.ico">
+<link rel="stylesheet" href="./css/format.css">
+<link rel="stylesheet" href="./css/common.css">
+<script type="text/javascript" src="./js/lib/jquery.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<title>FWS OFFICIAL WEBSITE</title></head>
+<!--ここまで準備部分-->
+
+<!--ここから実際に描画されるところ-->
+<body id="topPage" data-twttr-rendered="true">
+<!--★ここから「ヘッダー部分」★-->
+<div id="menuBox"><nav id="site-navigation">
+
+<!--ロゴの部分-->
+<a href="./">
+<div id="logo">
+<img src="./images/logo.png" alt="Fujieda-higashi Wind Symphonica">
+</div>
+</a>
+
+<!--------------------
+ここからはメニューの部分です。
+メニューは、<li>〜</li>で増やせる。
+カーソルを当てると伸びるやつに関しては「hasChild」
+そうでないやつは「noChild」のクラスに入れてください。
+子供は親の<li>〜<li>内に<ul>〜<ul>を作って、<li>〜<li>で増やして下さい。
+親のspanには「parent」、子供のulには「children」のクラスを。
+-------------------->
+<ul id="menu">
+<!--Aboutって書くとこ-->
+<li id="menuAbout" class="menulist">
+<span class="parent">ABOUT</span>
+<ul class="children">
+<li><a href="./about.html">FWSとは</a></li>
+<li><a href="./word.html">FWS用語</a></li>
+</ul>
+</li>
+<!--Eventって書くとこ-->
+<li id="menuEvent" class="menulist">
+<span class="parent">EVENT</span>
+<ul class="children">
+<li><a href="./concool2015.html">2015年度コンクール</a></li>
+<li><a href="./regular_concert2015.html">第54回定期演奏会</a></li>
+</ul>
+</li>
+<!--Linkって書くとこ-->
+<li id="menuLink" class="menulist">
+<span class="parent">LINK</span>
+<ul class="children">
+<li><a href="https://twitter.com/fws_fujieda">音楽部Twitter</a></li>
+<li><a href="http://www.edu.pref.shizuoka.jp/fujiedahigashi-h/home.nsf">藤枝東高等学校HP</a></li>
+<li><a href="http://www.ajba.or.jp/shizuoka/">静岡県吹奏楽連盟HP</a></li>
+</ul>
+</li>
+</ul>
+
+<!--スマホ用のボタンを描くところ。btnMenuOpenはcommon.jsとjquery.jsで動きます。-->
+<div class="btnMenuOpen">
+<span class="border"></span>
+<span class="border"></span>
+<span class="border"></span>
+</div>
+
+</nav></div>
+<!--★ここまで「ヘッダー部分」★-->
+
+<!--★ここから「内容部分」★-->
+<article class="rap">
+
+<!--トプ画です。トプ画の設定はcommon.cssで行います。-->
+<section id="top"><a href="./news001.html"></a></section>
+
+<!--Pickup記事を載せるところです。<ul>〜</ul>内は改行しないで下さい。画像はcommon.cssのpickupBox01〜03のとこで変えます。-->
+<section id="pickup">
+<h2><img src="./images/pickupcontents.png" alt="Pickup Contents"></h2>
+<ul>
+<li id="pickupBox01"><a href="http://www.edu.pref.shizuoka.jp/fujiedahigashi-h/home.nsf">記事1</a></li><li id="pickupBox02"><a href="http://www.edu.pref.shizuoka.jp/fujiedahigashi-h/home.nsf">記事2</a></li><li id="pickupBox03"><a href="./word.html">FWS用語</a></li>
+</ul>
+</section>
+
+<!--ここからNewsとTwitterの領域-->
+<div class="rap">
+<div class="topContentsBox" style="margin-left: 95px;">
+    <!--Twitterのインフォメーションを置くとこ。このウィジェットはTwitterの公式ページから設定→コピペします。-->
+	<section id="informationBox" style="right: 95px; width: 350px;">
+		<div id="twitter">
+		<h2><img src="./images/twitter.png" alt="Twitter"></h2>
+        <a class="twitter-timeline" href="https://twitter.com/fws_fujieda" data-widget-id="596358941296107520">@fws_fujiedaさんのツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+	</section>
+    <!--ここはFWSの近況を行うところです。新しいページを作成したら必ずここも編集しましょう。-->
+	<section id="contents">
+		<h2><img src="./images/fwsnews.png" alt="NEWS POST"></h2>
+		<div id="feed" class="clearfix"><ul id="rssArticle" style="display: block;">
+            <!--
+            この部分にどんどん継ぎ足していく感じです。改行はしないでください。
+            ここに表示される記事は15個までぐらいを想定していますが、わりと気にしなくていいです。
+            まあ、多過ぎて見難いと思ったら古い方から消してください。
+            記事は<li>〜</li>が一括りで、<li>は「articleBox」クラスに入れて下さい。
+            <span>〜</span>で記事のジャンルを指定します。ジャンルは次から選んで下さい。
+            ・EVENT　←イベント情報とかの場合
+            ・HP係日記　←なんかわりとどうでも良さげなこと書いた場合
+            ・お知らせ　←イベント情報じゃないお知らせ
+　　　　　　　・未分類　←上のどれにも当てはまらない気がして考えるのがめんどくさくなった場合
+            画像は<div></div>のstyleで指定しますが、以前の記事を参考にしてください。
+            <h3>〜</h3>で記事のタイトル、<p>〜</p>で記事の説明を書きます。
+            <time>〜</time>で記事の日付を書きます。
+
+            以下、テンプレートです
+
+　　　　　　　<li class="articleBox"><span>未分類</span><a href="http://www.edu.pref.shizuoka.jp/fujiedahigashi-h/home.nsf"><div class="rssBox"><div class="topThum" style="background: url(./images/articlepic.png) no-repeat; background-size:cover;"></div><h3>ここにタイトルを書く</h3><p>ここに説明を書く</p><time>2015.XX.XX</time></div></a></li>
+
+            -->
+            <li class="articleBox"><span>お知らせ</span><a href="./regular_concert2015.html"><div class="rssBox"><div class="topThum" style="background: url(./images/2015rc.jpg) no-repeat; background-size:cover;"></div><h3>第54回定期演奏会のお知らせ</h3><p>次回の定期演奏会は2016年5月1日を予定しています</p><time>2015.06.01</time></div></a></li><li class="articleBox"><span>お知らせ</span><a href="./concool2015.html"><div class="rssBox"><div class="topThum" style="background: url(./images/articlepic.png) no-repeat; background-size:cover;"></div><h3>コンクール日程など</h3><p>夏のコンクールについて</p><time>2015.06.01</time></div></a></li><li class="articleBox"><span>未分類</span><a href="./word.html"><div class="rssBox"><div class="topThum" style="background: url(./images/wordpic.jpg) no-repeat; background-size:cover;"></div><h3>FWS用語</h3><p>FWSにまつわるあんな言葉こんな言葉</p><time>2015.06.01</time></div></a></li><li class="articleBox"><span>未分類</span><a href="./about.html"><div class="rssBox"><div class="topThum" style="background: url(./images/articlepic.png) no-repeat; background-size:cover;"></div><h3>FWS概要</h3><p>FWSについてあれこれ</p><time>2015.06.01</time></div></a></li><li class="articleBox"><span>お知らせ</span><a href="./news001.html"><div class="rssBox"><div class="topThum" style="background: url(./images/main.jpg) no-repeat; background-size:cover;"></div><h3>ホームページリニューアル！</h3><p>6月になり、ついにホームページがリニューアルオープンしました！</p><time>2015.06.01</time></div></a></li>
+        </ul></div>
+	</section>
+</div>
+</div>
+</article>
+<!--★ここまで「内容部分」★-->
+
+<!--★ここから「フッター部分」★-->
+<div id="footerContents">
+<footer id="topFooter" role="contentinfo">
+<div class="siteInfo">
+<div class="higashikoLogo">
+<!--東高のHPに行くボタン-->
+<a href="http://www.edu.pref.shizuoka.jp/fujiedahigashi-h/home.nsf" id="unityWebsite"><img src="./images/gotoHigashikoHP.png" alt="Fujieda-Higashi"></a>
+<!--メールフォームに行くボタン(スマホ用)-->
+<a href="http://www.edu.pref.shizuoka.jp/fujiedahigashi-h/home.nsf" id="btnMobileContact"><img src="/images/btnContactMobile.png" alt="CONTACT" class="mouseon"></a>
+</div>
+<div class="sns">
+<ul>
+<!--メールフォームに行くボタン(デスクトップ用)-->
+<li id="btnContact"><a href="mailto:fujieda.h.h.s@gmail.com"><img src="./images/contact.png" alt="CONTACT" class="mouseon"></a></li>
+<!--Twitterでつぶやけるボタン-->
+<li id="btnTwitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://vmelville.github.io/fws/" data-text="【藤枝東高音楽部ホームページ】" data-lang="ja" data-hashtags="FWS_fujieda">ツイート</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+</ul>
+<!--著作権表示-->
+<p class="copyright">copyright Fujieda-higashi Wind Symphonica all Rights Reserved</p>
+</div>
+
+</div>
+</footer>
+</div>
+<!--★ここまで「フッター部分」★-->
+
+<div></div>
+</body></html>

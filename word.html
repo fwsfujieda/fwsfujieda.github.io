@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=640">
+<link rel="icon" href="./images/favicon.ico">
+<link rel="stylesheet" href="./css/format.css">
+<link rel="stylesheet" href="./css/common.css">
+<script type="text/javascript" src="./js/lib/jquery.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<title>FWS OFFICIAL WEBSITE</title></head>
+<!--ここまで準備部分-->
+
+<!--ここから実際に描画されるところ-->
+<body id="topPage" data-twttr-rendered="true">
+<!--★ここから「ヘッダー部分」★-->
+<div id="menuBox"><nav id="site-navigation">
+
+<!--ロゴの部分-->
+<a href="./">
+<div id="logo">
+<img src="./images/logo.png" alt="Fujieda-higashi Wind Symphonica">
+</div>
+</a>
+
+<!--------------------
+ここからはメニューの部分です。
+メニューは、<li>〜</li>で増やせる。
+カーソルを当てると伸びるやつに関しては「hasChild」
+そうでないやつは「noChild」のクラスに入れてください。
+子供は親の<li>〜<li>内に<ul>〜<ul>を作って、<li>〜<li>で増やして下さい。
+親のspanには「parent」、子供のulには「children」のクラスを。
+-------------------->
+<ul id="menu">
+<!--Aboutって書くとこ-->
+<li id="menuAbout" class="menulist">
+<span class="parent">ABOUT</span>
+<ul class="children">
+<li><a href="./about.html">FWSとは</a></li>
+<li><a href="./word.html">FWS用語</a></li>
+</ul>
+</li>
+<!--Eventって書くとこ-->
+<li id="menuEvent" class="menulist">
+<span class="parent">EVENT</span>
+<ul class="children">
+<li><a href="./concool2015.html">2015年度コンクール</a></li>
+<li><a href="./regular_concert2015.html">第54回定期演奏会</a></li>
+</ul>
+</li>
+<!--Linkって書くとこ-->
+<li id="menuLink" class="menulist">
+<span class="parent">LINK</span>
+<ul class="children">
+<li><a href="https://twitter.com/fws_fujieda">音楽部Twitter</a></li>
+<li><a href="http://www.edu.pref.shizuoka.jp/fujiedahigashi-h/home.nsf">藤枝東高等学校HP</a></li>
+<li><a href="http://www.ajba.or.jp/shizuoka/">静岡県吹奏楽連盟HP</a></li>
+</ul>
+</li>
+</ul>
+
+<!--スマホ用のボタンを描くところ。btnMenuOpenはcommon.jsとjquery.jsで動きます。-->
+<div class="btnMenuOpen">
+<span class="border"></span>
+<span class="border"></span>
+<span class="border"></span>
+</div>
+
+</nav></div>
+<!--★ここまで「ヘッダー部分」★-->
+
+<!--★ここから「内容部分」★-->
+<div id="cogen-city-journal" class="clearfix pageBox post">
+<div class="contentsBox">
+<article id="primary" class="singlePost" role="main">
+<div class="post" id="post-2309">
+
+
+<!--
+ここから記事のヘッダー部分です。
+<h1>〜</h1>にタイトル、<time>〜</time>に時間を書いて下さい。
+<div class="sns">〜</div>にツイッターのボタンを設置します。
+ここに設置するツイッターのボタンは、記事ごとに作りなおして下さい。
+ボタンは、記事のURLが入るように、Twitterの公式ページで作って下さい
+-->
+<div class="headerInformation">
+<h1>FWS用語</h1>
+<time>Sun, 31 May 2015</time>
+<div class="sns">
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="file:///Users/Mizuki/Documents/VMelville.github.io/fws/about.html" data-lang="ja" data-hashtags="FWS_fujieda">ツイート</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+</div>
+
+<!--
+ここからは自由に書いちゃって下さい。
+文字は基本的に段落ごと、<p>〜</p>内にお願いします。
+画像は<img>タグとかで貼りましょう。
+-->
+<div class="entry">
+<img src="./images/wordpic.jpg" style="margin">
+<p>FWS用語を集めましたv('ω')v　随時更新する予定です。</p>
+<table>
+<tr><td><p>FWS</p></td><td><p>Fujieda-higashi Wind Symphonicaの略。藤枝東高音楽部のこと。</p></td></tr>
+<tr><td><p>定演</p></td><td><p>定期演奏会の略。</p></td></tr>
+<tr><td><p>一部</p></td><td><p>定期演奏会の一部がクラシックステージであることから、クラシックをさす。</p></td></tr>
+<tr><td><p>二部</p></td><td><p>定期演奏会の二部がジャズステージであることから、ジャズ、またはジャズ演奏者を指す。</p></td></tr>
+<tr><td><p>三部</p></td><td><p>定期演奏会の三部がポップスステージであることから、ポップスをさす。また、定期演奏会での三部係を指すこともある。</p></td></tr>
+<tr><td><p>アレンジ</p></td><td><p>東高定期演奏会おなじみの、FWSメドレーを編曲する人たちのこと。</p></td></tr>
+<tr><td><p>FWSメドレー</p></td><td><p>前述のアレンジ係が編曲するメドレー。東高の定期演奏会の目玉の一つ。</p></td></tr>
+<tr><td><p>AVE(アベ)</p></td><td><p>多分オーディオビジュアルエンジニアの略。違ってたらすみません(´･_･`)　AV機器を扱う、AVE係のことをさす。</p></td></tr>
+<tr><td><p>バリチュー</p></td><td><p>バリトンとチューバ、つまりユーフォニウムとチューバのパート。</p></td></tr>
+<tr><td><p>弦ベーダブリ</p></td><td><p>おそらく「弦、ベース、ダブルリード」の略。コントラバスとオーボエとファゴットを寄せ集めたパート。</p></td></tr>
+<tr><td><p>あだ名</p></td><td><p>毎年、入部してくる一年生に先輩がつけるニックネーム。定着する人と定着しない人がいる。</p></td></tr>
+<tr><td><p>燕の会</p></td><td><p>高音木管による練習グループ。</p></td></tr>
+<tr><td><p>夫婦の会</p></td><td><p>低音による練習グループ。</p></td></tr>
+<tr><td><p>千南原会館</p></td><td><p>私達が使用している練習場所。運動部の合宿に使われる。わりと最近きれいになった。</p></td></tr>
+<tr><td><p>同窓会館</p></td><td><p>私達が使用している練習場所…なのだが、大抵、千南原会館とひとくくりにされる。</p></td></tr>
+<tr><td><p>グループ</p></td><td><p>東高音楽部では楽器ごとABCDグループに分かれており、A〜Dは音の低い順になっている。</p></td></tr>
+<tr><td><p>ロングトーン</p></td><td><p>基礎合奏の一つ。</p></td></tr>
+<tr><td><p>バランス</p></td><td><p>基礎合奏の一つ。</p></td></tr>
+<tr><td><p>ハーモニー</p></td><td><p>基礎合奏の一つ。ハーモニーA、Bがある。なぜかB、Aの順に行われる。幻のハーモニーCも存在する。</p></td></tr>
+<tr><td><p>旧ホルン場</p></td><td><p>同窓会館入り口玄関の空間のこと。今は誰も練習していないスペースで、それゆえに浴室と並ぶ話し合いの王道スペースになっている。</p></td></tr>
+<tr><td><p>F</p></td><td><p>普段フルートが利用しているスペースなので「F」。茶華道部もたまに利用する。講習会のスペースとしても頻繁に使われる。</p></td></tr>
+<tr><td><p>幹部</p></td><td><p>部長、副部長、学指揮をまとめて指す呼び方。</p></td></tr>
+<tr><td><p>学指揮</p></td><td><p>学生指揮者の略。</p></td></tr>
+</table>
+
+</div>
+<!--自由に書いていい領域ここまで！-->
+
+</div>
+</article>
+</div>
+</div>
+<!--★ここまで「内容部分」★-->
+
+<!--★ここから「フッター部分」★-->
+<footer id="topFooter" role="contentinfo">
+<div class="siteInfo">
+<div class="higashikoLogo">
+<!--東高のHPに行くボタン-->
+<a href="http://www.edu.pref.shizuoka.jp/fujiedahigashi-h/home.nsf" id="unityWebsite"><img src="./images/gotoHigashikoHP.png" alt="Fujieda-Higashi"></a>
+<!--メールフォームに行くボタン(スマホ用)-->
+<a href="http://www.edu.pref.shizuoka.jp/fujiedahigashi-h/home.nsf" id="btnMobileContact"><img src="/images/btnContactMobile.png" alt="CONTACT" class="mouseon"></a>
+</div>
+<div class="sns">
+<ul>
+<!--メールフォームに行くボタン(デスクトップ用)-->
+<li id="btnContact"><a href="mailto:fujieda.h.h.s@gmail.com"><img src="./images/contact.png" alt="CONTACT" class="mouseon"></a></li>
+<!--Twitterでつぶやけるボタン-->
+<li id="btnTwitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://vmelville.github.io/fws/" data-text="【藤枝東高音楽部ホームページ】" data-lang="ja" data-hashtags="FWS_fujieda">ツイート</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+</ul>
+<!--著作権表示-->
+<p class="copyright">copyright Fujieda-higashi Wind Symphonica all Rights Reserved</p>
+</div>
+
+</div>
+</footer>
+<!--★ここまで「フッター部分」★-->
+
+<div></div>
+</body></html>
