@@ -1258,7 +1258,7 @@ div.noComment{
 	position: absolute;
 	top:85px;
 	left: -30px;
-	background: url(../images/imageSayNo.png) no-repeat;
+	background: url(../images/imageSayNoimageSayNo.png) no-repeat;
 	height: 391px;
 	width: 626px;
 	vertical-align: middle;
@@ -1330,6 +1330,8 @@ footer div.siteInfo div.higashikoLogo{
 
 footer div.siteInfo div.sns{
 	position: absolute;
+    height: 80px;
+    margin-bottom: 30px;
 	top: 45px;
 	left: 185px;
 	font-size: 9px;
