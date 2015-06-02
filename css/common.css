@@ -1308,7 +1308,7 @@ footer{
 	background: #2f4052 center bottom;
 	background-size:100%;
 	width: 100%;
-	height: 200px;
+	height: 160px;
 	min-width: 1000px;
 }
 
@@ -1637,7 +1637,7 @@ div.contentsBox{
 
 footer {
 	min-width: 640px;
-	height: 194px;
+	height: 240px;
 }
 
 footer div.siteInfo{
