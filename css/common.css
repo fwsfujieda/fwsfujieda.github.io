@@ -862,8 +862,6 @@ article#primary.singlePost div.post time{
 }
 
 article#primary.singlePost div.post{
-    width: 600px;
-    margin: 0 20px;
 	font-size:0.9rem;
 	letter-spacing:1px;
 }
@@ -1388,7 +1386,6 @@ body{
   -o-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
-
 /*
 --------------------------------------------/Common
 */
@@ -1749,7 +1746,10 @@ div.pageBox.post{
 	width: 640px;
 }
 
-
+article#primary.singlePost div.post{
+    width: 600px;
+    margin: 0 20px;
+}
 /*
 --------------------------------------------/bg
 */
