@@ -862,6 +862,11 @@ article#primary.singlePost div.post time{
 }
 
 article#primary.singlePost div.post{
+    margin: 0 30px;
+	font-size:0.9rem;
+	letter-spacing:1px;
+}
+
 	font-size:0.9rem;
 	letter-spacing:1px;
 }
