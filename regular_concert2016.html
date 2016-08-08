@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=640">
+<link rel="icon" href="./images/favicon.ico">
+<link rel="stylesheet" href="./css/format.css">
+<link rel="stylesheet" href="./css/common.css">
+<script type="text/javascript" src="./js/lib/jquery.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<title>東高音楽部HP | 第54回定期演奏会のお知らせ</title></head>
+<!--ここまで準備部分-->
+
+<!--ここから実際に描画されるところ-->
+<body id="topPage" data-twttr-rendered="true">
+<!--★ここから「ヘッダー部分」★-->
+<div id="menuBox"><nav id="site-navigation">
+
+<!--ロゴの部分-->
+<a href="./">
+<div id="logo">
+<img src="./images/logo.png" alt="Fujieda-higashi Wind Symphonica">
+</div>
+</a>
+
+<!--------------------
+ここからはメニューの部分です。
+メニューは、<li>〜</li>で増やせる。
+カーソルを当てると伸びるやつに関しては「hasChild」
+そうでないやつは「noChild」のクラスに入れてください。
+子供は親の<li>〜<li>内に<ul>〜<ul>を作って、<li>〜<li>で増やして下さい。
+親のspanには「parent」、子供のulには「children」のクラスを。
+-------------------->
+<ul id="menu">
+<!--Aboutって書くとこ-->
+<li id="menuAbout" class="menulist">
+<span class="parent">ABOUT</span>
+<ul class="children">
+<li><a href="./about.html">FWSとは</a></li>
+<li><a href="./word.html">FWS用語</a></li>
+</ul>
+</li>
+<!--Eventって書くとこ-->
+<li id="menuEvent" class="menulist">
+<span class="parent">EVENT</span>
+<ul class="children">
+<li><a href="./concool2015.html">2015年度コンクール</a></li>
+<li><a href="./regular_concert2015.html">第54回定期演奏会</a></li>
+</ul>
+</li>
+<!--Linkって書くとこ-->
+<li id="menuLink" class="menulist">
+<span class="parent">LINK</span>
+<ul class="children">
+<li><a href="https://twitter.com/fws_fujieda">音楽部Twitter</a></li>
+<li><a href="http://www.edu.pref.shizuoka.jp/fujiedahigashi-h/home.nsf">藤枝東高等学校HP</a></li>
+<li><a href="http://www.ajba.or.jp/shizuoka/">静岡県吹奏楽連盟HP</a></li>
+</ul>
+</li>
+</ul>
+
+<!--スマホ用のボタンを描くところ。btnMenuOpenはcommon.jsとjquery.jsで動きます。-->
+<div class="btnMenuOpen">
+<span class="border"></span>
+<span class="border"></span>
+<span class="border"></span>
+</div>
+
+</nav></div>
+<!--★ここまで「ヘッダー部分」★-->
+
+<!--★ここから「内容部分」★-->
+<div id="cogen-city-journal" class="clearfix pageBox post">
+<div class="contentsBox">
+<article id="primary" class="singlePost" role="main">
+<div class="post">
+
+<!--
+ここから記事のヘッダー部分です。
+<h1>〜</h1>にタイトル、<time>〜</time>に時間を書いて下さい。
+<div class="sns">〜</div>にツイッターのボタンを設置します。
+ここに設置するツイッターのボタンは、記事ごとに作りなおして下さい。
+ボタンは、記事のURLが入るように、Twitterの公式ページで作って下さい
+-->
+<div class="headerInformation">
+<h1>第54回定期演奏会のお知らせ</h1>
+<time>Thu, 21 April 2016</time>
+<div class="sns">
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fwsfujieda.github.io/regular_concert2016.html" data-via="fws_fujieda">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+</div>
+
+<!--
+ここからは自由に書いちゃって下さい。
+文字は基本的に段落ごと、<p>〜</p>内にお願いします。
+画像は<img>タグとかで貼りましょう。
+-->
+<div class="entry">
+<p>第54回藤枝東高校定期演奏会は5/1に行われます！
+</p>
+
+</div>
+<!--自由に書いていい領域ここまで！-->
+
+</div>
+</article>
+</div>
+</div>
+<!--★ここまで「内容部分」★-->
+
+<!--★ここから「フッター部分」★-->
+<footer id="topFooter" role="contentinfo">
+<div class="siteInfo">
+<div class="higashikoLogo">
+<!--東高のHPに行くボタン-->
+<a href="http://www.edu.pref.shizuoka.jp/fujiedahigashi-h/home.nsf" id="unityWebsite"><img src="./images/gotoHigashikoHP.png" alt="Fujieda-Higashi"></a>
+<!--メールフォームに行くボタン(スマホ用)-->
+<a href="mailto:fujieda.h.h.s@gmail.com" id="btnMobileContact"><img src="./images/contact.png" alt="CONTACT" class="mouseon"></a>
+</div>
+<div class="sns">
+<ul>
+<!--メールフォームに行くボタン(デスクトップ用)-->
+<li id="btnContact"><a href="mailto:fujieda.h.h.s@gmail.com"><img src="./images/contact.png" alt="CONTACT" class="mouseon"></a></li>
+<!--Twitterでつぶやけるボタン-->
+<li id="btnTwitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fwsfujieda.github.io" data-text="【藤枝東高音楽部ホームページ】" data-lang="ja" data-hashtags="FWS_fujieda">ツイート</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+</ul>
+<!--著作権表示-->
+<p class="copyright">copyright Fujieda-higashi Wind Symphonica all Rights Reserved</p>
+</div>
+
+</div>
+</footer>
+<!--★ここまで「フッター部分」★-->
+
+<div></div>
+</body></html>
